@@ -15,7 +15,7 @@ jobs:
      - uses: actions/checkout@v3
      - name: train model
        env :
-         REPO_TOKEN: ${{ secrets.GITHUB_TOKEN
+         REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
        run: |
          pip install -r requirement.txt
@@ -23,7 +23,7 @@ jobs:
 
 
          echo "RF and LR Model Score" > report .md
-         cat report .txt
+         cat scores.txt
 
          echo "Confusion Matrix & Feature Importance" > reportl.md
          echo '![](./confusionmatrix.png "confusionmatrix")' >> reportl.md
