@@ -20,12 +20,13 @@ jobs:
        run: |
          pip install -r requirements.txt
          python train_model.py
+         python test.py
 
 
-         echo "RF and LR Model Score" > report.md
+         echo "# RF and LR Model Score" > report.md
          cat scores.txt >> report.md
 
-         echo "Confusion Matrix & Feature Importance" > reportl.md
+         echo "# Confusion Matrix & Feature Importance" > reportl.md
          echo '![](./ConfusionMatrix.png "ConfusionMatrix")' >> reportl.md
          echo '![](./FeatureImportance.png "FeatureImportance")' >> reportl.md
 
