@@ -11,7 +11,7 @@ jobs:
    runs-on:
      - ubuntu-latest
    steps:
-     - uses: interactive/setup-cml@vl
+     - uses: iterative/setup-cml@vl
      - uses: actions/checkout@v3
      - name: train model
        env :
