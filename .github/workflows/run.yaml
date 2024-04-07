@@ -23,8 +23,7 @@ jobs:
          python test.py
 
          echo "# Sanity Checks" > report2.md
-         cat text.txt >> report2.md
-
+         cat test.txt >> report2.md
 
          echo "# RF and LR Model Score" > report.md
          cat scores.txt >> report.md
