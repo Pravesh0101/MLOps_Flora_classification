@@ -30,4 +30,4 @@ jobs:
          echo '![](./FeatureImportace.png "Featurelmportace")' >> reportl.md
 
          cat report.md reportl.md > combined_file.md
-         cml comment create combined_fi1e.md
+         cml comment create combined_file.md
