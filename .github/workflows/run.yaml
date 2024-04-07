@@ -26,7 +26,7 @@ jobs:
          cat scores.txt
 
          echo "Confusion Matrix & Feature Importance" > reportl.md
-         echo '![](./confusionmatrix.png "confusionmatrix")' >> reportl.md
+         echo '![](./confusionMatrix.png "confusionmatrix")' >> reportl.md
          echo '![](./FeatureImportace.png "Featurelmportace")' >> reportl.md
 
          cat report.md reportl.md > combined_file.md
