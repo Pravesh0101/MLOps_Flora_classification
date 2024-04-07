@@ -23,11 +23,11 @@ jobs:
 
 
          echo "RF and LR Model Score" > report.md
-         cat scores.txt
+         cat scores.txt >> report.md
 
          echo "Confusion Matrix & Feature Importance" > reportl.md
          echo '![](./ConfusionMatrix.png "ConfusionMatrix")' >> reportl.md
-         echo '![](./FeatureImportace.png "FeatureImportace")' >> reportl.md
+         echo '![](./FeatureImportance.png "FeatureImportance")' >> reportl.md
 
          cat report.md reportl.md > combined_file.md
          cml comment create combined_file.md
